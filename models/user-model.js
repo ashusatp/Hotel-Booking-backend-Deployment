@@ -7,7 +7,6 @@ const userSchema = new Schema(
       type: String,
       required: true,
       unique: true,
-      trim: true, // Trim leading and trailing whitespace
     },
     email: {
       type: String,
@@ -34,7 +33,6 @@ const userSchema = new Schema(
     hotelId:{
       type: Schema.Types.ObjectId,
       ref: 'Hotel',
-      unique: true,
     },
     activated:{
       type: Boolean,
