@@ -89,12 +89,12 @@ class AuthControlers {
 
     res.cookie("accessToken", accessToken, {
       maxAge: 1000 * 60 * 60 * 24 * 30, //30 days
-      sameSite: none,
+      sameSite: "none",
       secure: true
     });
     res.cookie("refreshToken", refreshToken, {
       maxAge: 1000 * 60 * 60 * 24 * 30, //30 days
-      sameSite: none,
+      sameSite: "none",
       secure: true
     });
 
@@ -178,12 +178,12 @@ class AuthControlers {
 
     res.cookie("accessToken", accessToken, {
       maxAge: 1000 * 60 * 60 * 24 * 30, //30 days
-      sameSite: none,
+      sameSite: "none",
       secure: true
     });
     res.cookie("refreshToken", refreshToken, {
       maxAge: 1000 * 60 * 60 * 24 * 30, //30 days
-      sameSite: none,
+      sameSite: "none",
       secure: true
     });
 
@@ -266,12 +266,12 @@ class AuthControlers {
 
     res.cookie("accessToken", accessToken, {
       maxAge: 1000 * 60 * 60 * 24 * 30, //30 days
-      sameSite: none,
+      sameSite: "none",
       secure: true
     });
     res.cookie("refreshToken", refreshToken, {
       maxAge: 1000 * 60 * 60 * 24 * 30, //30 days
-      sameSite: none,
+      sameSite: "none",
       secure: true
     });
 
