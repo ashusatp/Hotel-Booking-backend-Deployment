@@ -103,7 +103,8 @@ class PaymentControllers {
       });
       res.cookie("bookingId", booking._id, {
         maxAge: 1000 * 60 * 10, //30 days
-        httpOnly: true,
+        sameSite: "none",
+        secure: true,
       });
     } catch (error) {
       return res.status(500).json({
